@@ -8,11 +8,18 @@ public class Gcd {
    *
    * <p>gcd(8, 12) => 4
    */
+
+   // y = remainder. x = divisible by. 
   static int gcd(int a, int b) {
-    while (a != 0) {
-      var temp = a;
-      a = b % a;
+    var y = b % a;
+    while (y != 0) {
+      //var temp = a;
+      b = a;
+      a = y;
+      y = b % a;
+      //int x = b/a;
+
     }
-    return b;
+    return a;
   }
 }
