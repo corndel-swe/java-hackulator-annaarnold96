@@ -13,7 +13,7 @@ public class Subtract {
    * <p>subtract(-2, 4) => 6
    */
   static int subtract(int x, int y) {
-    if (x < y) {
+    if (x <= y) {
       return y - x;
     }
 
